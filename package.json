@@ -1,6 +1,6 @@
 {
   "name": "changelog-push",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Insert changelog fragments into CHANGELOG.md",
   "main": "dist/index.js",
   "type": "module",
