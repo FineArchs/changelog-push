@@ -12,7 +12,13 @@ npm run build
 npm run build
 ```
 
-### テスト実行
+### 実行
+```bash
+# 要 TEST_CHANGELOG.md
+node dist/index.js --file TEST_CHANGELOG.md "feat: Add new authentication system"
+```
+
+### テスト
 ```bash
 npm test
 ```

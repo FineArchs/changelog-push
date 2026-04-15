@@ -9,29 +9,29 @@
 - **制約チェック**: `--new-version` や `--existing-section` などのオプションで、意図しない重複や欠落を防止できます。
 - **TypeScript & Vitest**: 型安全な実装と自動テストにより、信頼性の高い操作を提供します。
 
-## インストール（開発用）
+## インストール
 
 ```bash
-git clone <repository-url>
-cd changelog-push
-npm install
-npm run build
+npm install -g FineArchs/changelog-push#dist
+
+# プロジェクトローカル
+npm install -D FineArchs/changelog-push#dist
 ```
 
 ## 使用法
 
 ```bash
 # 基本的な使用方法（Unreleased セクションに追加）
-node dist/index.js "feat: Add new authentication system"
+npx chlog-push "feat: Add new authentication system"
 
 # バージョンとセクションを指定して追加
-node dist/index.js -v "1.2.0" -s "Features" "Add user profile page"
+npx chlog-push -v "1.2.0" -s "Features" "Add user profile page"
 
 # 断片フォーマットを使用して一括指定
-node dist/index.js "## 1.3.0\n### Bugfixes\n- fix: Corrected login layout"
+npx chlog-push "## 1.3.0\n### bugfixes\n- fix: corrected login layout"
 
 # ファイルから読み込み
-node dist/index.js -i fragment.md
+npx chlog-push -i fragment.md
 ```
 
 ### オプション一覧
