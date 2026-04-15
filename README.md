@@ -48,18 +48,6 @@ node dist/index.js -i fragment.md
 | `--dry-run` | | ファイルを書き換えずに結果を出力 |
 | `--quiet` | | 出力を最小限に抑える |
 
-## 開発とテスト
-
-### ビルド
-```bash
-npm run build
-```
-
-### テスト実行
-```bash
-npm test
-```
-
 ## ライセンス
 
 ISC
