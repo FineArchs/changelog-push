@@ -9,13 +9,10 @@
 - **制約チェック**: `--new-version` や `--existing-section` などのオプションで、意図しない重複や欠落を防止できます。
 - **TypeScript & Vitest**: 型安全な実装と自動テストにより、信頼性の高い操作を提供します。
 
-## インストール（開発用）
+## インストール
 
 ```bash
-git clone <repository-url>
-cd changelog-push
-npm install
-npm run build
+npm install FineArchs/changelog-push#dist
 ```
 
 ## 使用法
