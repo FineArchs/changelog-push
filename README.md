@@ -19,16 +19,16 @@ npm install FineArchs/changelog-push#dist
 
 ```bash
 # 基本的な使用方法（Unreleased セクションに追加）
-node dist/index.js "feat: Add new authentication system"
+npx chlog-push "feat: Add new authentication system"
 
 # バージョンとセクションを指定して追加
-node dist/index.js -v "1.2.0" -s "Features" "Add user profile page"
+npx chlog-push -v "1.2.0" -s "Features" "Add user profile page"
 
 # 断片フォーマットを使用して一括指定
-node dist/index.js "## 1.3.0\n### Bugfixes\n- fix: Corrected login layout"
+npx chlog-push "## 1.3.0\n### bugfixes\n- fix: corrected login layout"
 
 # ファイルから読み込み
-node dist/index.js -i fragment.md
+npx chlog-push -i fragment.md
 ```
 
 ### オプション一覧
