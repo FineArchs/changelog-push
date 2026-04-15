@@ -12,7 +12,10 @@
 ## インストール
 
 ```bash
-npm install FineArchs/changelog-push#dist
+npm install -g FineArchs/changelog-push#dist
+
+# プロジェクトローカル
+npm install -D FineArchs/changelog-push#dist
 ```
 
 ## 使用法
